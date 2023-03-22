@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="OmnisJSWrapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdo-UA-xzy" userLabel="WebviewContainer" customClass="OMWebContainer" customModule="OmnisAppInterface">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xdo-UA-xzy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LBD-AU-qlB"/>
+                            <constraint firstItem="Xdo-UA-xzy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="idG-6c-0zs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xdo-UA-xzy" secondAttribute="trailing" id="kia-R7-bzu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xdo-UA-xzy" secondAttribute="bottom" id="vM0-tq-VJo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="webviewContainer" destination="Xdo-UA-xzy" id="qsr-WP-7PY"/>
+                        <segue destination="tNs-mK-zJZ" kind="show" identifier="showAboutSegue" id="dha-bw-Ifa"/>
+                        <segue destination="g6b-x6-UpN" kind="unwind" identifier="unwindToMainScreen" unwindAction="unwindToMainScreenWithSegue:" id="80f-eZ-xsu"/>
+                        <segue destination="VZ1-Tt-1PR" kind="show" identifier="showCreditsSegue" id="WmO-5r-sjN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+        </scene>
+        <!--About Screen-->
+        <scene sceneID="fpy-Bk-COJ">
+            <objects>
+                <viewController title="About Screen" id="RUo-S4-tlZ" customClass="AboutViewController" customModule="OmnisJSWrapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C0T-M1-mzf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RPP-TF-pYL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="Tba-zQ-fdO">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="toC-4v-PRC">
+                            <connections>
+                                <segue destination="g6b-x6-UpN" kind="unwind" identifier="unwindToMainFromAbout" unwindAction="unwindToMainScreenWithSegue:" id="zDm-wH-YXw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Credits" id="NVe-m7-PAZ">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="stringId" value="nav_title_credits"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <segue destination="I1i-Lc-n8q" kind="show" identifier="showCreditsFromAboutSegue" id="YeP-qF-Xyu"/>
+                            </connections>
+                        </barButtonItem>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="stringId" value="nav_title_about"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="leftBarButtonItem" destination="toC-4v-PRC" id="lQP-Gk-GmI"/>
+                        </connections>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlU-qd-97R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="g6b-x6-UpN" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2058.4000000000001" y="132.26600985221674"/>
+        </scene>
+        <!--Credits Screen-->
+        <scene sceneID="0cw-Y9-37m">
+            <objects>
+                <viewController title="Credits Screen" id="I1i-Lc-n8q" customClass="CreditsViewController" customModule="OmnisJSWrapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z8r-sM-AaR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="F4Y-65-T4K"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Credits" id="Lr3-fY-tbz">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="stringId" value="nav_title_credits"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="8YZ-xB-Kyk" kind="unwind" identifier="unwindToMainScreen" unwindAction="unwindToMainScreenWithSegue:" id="6pa-p3-V8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N0w-Ad-y8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8YZ-xB-Kyk" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2936.8000000000002" y="671.67487684729065"/>
+        </scene>
+        <!--Credits Nav Controller-->
+        <scene sceneID="zDa-ED-kNE">
+            <objects>
+                <navigationController title="Credits Nav Controller" id="VZ1-Tt-1PR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vKG-34-Ulb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="I1i-Lc-n8q" kind="relationship" relationship="rootViewController" id="hDI-00-1C6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoH-Av-ccC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1673" y="973"/>
+        </scene>
+        <!--About Nav Controller-->
+        <scene sceneID="nxU-j1-q1O">
+            <objects>
+                <navigationController title="About Nav Controller" automaticallyAdjustsScrollViewInsets="NO" id="tNs-mK-zJZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s5U-gN-IlR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RUo-S4-tlZ" kind="relationship" relationship="rootViewController" id="AJk-AL-mnf"/>
+                        <segue destination="y8V-f9-Flq" kind="unwind" identifier="unwindToNavController" unwindAction="unwindToHereWithSegue:" id="ctd-sf-wyy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eC6-l9-x6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="y8V-f9-Flq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2058" y="-642"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YeP-qF-Xyu"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,210 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 effective-4.1.50 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name OmnisAppInterface
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import Foundation
+import LocalAuthentication
+import MobileCoreServices
+@_exported import OmnisAppInterface
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import os.log
+import os
+@objc @_inheritsConvenienceInitializers public class OMSubAPI : ObjectiveC.NSObject {
+  @objc deinit
+  @objc override dynamic public init()
+}
+public struct FeatureTypes {
+  public static let NATIVE_DIALOGS: Swift.String
+  public static let SHOW_PDF: Swift.String
+  public static let PRINT_PDF: Swift.String
+  public static let STORED_PREFS: Swift.String
+  public static let PUSH_NOTIFICATIONS: Swift.String
+  public static let PREFERRED_LOCALE: Swift.String
+  public static let DEVICE_SECURE: Swift.String
+}
+@_hasMissingDesignatedInitializers public class Features {
+  public func addFeature(featureID: Swift.String)
+  public func removeFeature(featureID: Swift.String)
+  public func getFeatures() -> [Swift.String]!
+  public func hasFeature(featureID: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+public protocol OMWebContainerDelegate {
+  func webContainerSizeChanged(newFrame: CoreFoundation.CGRect!)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class OMWebContainer : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var delegate: OmnisAppInterface.OMWebContainerDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func getWebview() -> WebKit.WKWebView?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIResponder {
+  @_Concurrency.MainActor(unsafe) public func getParentViewController() -> UIKit.UIViewController?
+}
+@_hasMissingDesignatedInitializers public class Security {
+  public static func getDeviceIsSecure() -> Swift.Bool
+  @objc deinit
+}
+public protocol OMWebNavigationDelegate {
+  func omnisBeginLoading(webView: WebKit.WKWebView, navigation: WebKit.WKNavigation!) -> Swift.Bool
+  func omnisLoadingComplete(webView: WebKit.WKWebView, navigation: WebKit.WKNavigation!) -> Swift.Bool
+  func omnisLoadingFailed(webView: WebKit.WKWebView, navigation: WebKit.WKNavigation!, error: Swift.Error) -> Swift.Bool
+}
+public enum OMWebControllerError : Swift.Error {
+  case invalidURL
+  public static func == (a: OmnisAppInterface.OMWebControllerError, b: OmnisAppInterface.OMWebControllerError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension OmnisAppInterface.OMWebControllerError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension Foundation.NSNotification.Name {
+  public static let OmnisNotificationsEnabledChanged: Foundation.Notification.Name
+}
+@objc public class OmnisInterface : ObjectiveC.NSObject, WebKit.WKNavigationDelegate {
+  weak public var viewController: UIKit.UIViewController?
+  public var features: OmnisAppInterface.Features
+  public var scafHandler: OmnisAppInterface.ScafHandler!
+  public var settings: OmnisAppInterface.Settings!
+  public var database: OmnisAppInterface.LocalDBController!
+  public var webNavigationDelegate: OmnisAppInterface.OMWebNavigationDelegate?
+  public var commsDelegate: OmnisAppInterface.OMCommsDelegate? {
+    get
+    set
+  }
+  public static let DEVICE_ID: Swift.String
+  public init(webviewContainer: OmnisAppInterface.OMWebContainer!, viewController: UIKit.UIViewController? = nil, settings: OmnisAppInterface.Settings? = nil)
+  @objc deinit
+  public func loadURL(_ url: Foundation.URL, withParams: [Swift.String : Swift.String]? = nil) throws
+  public func callJS(_ jsString: Swift.String!, completionHandler: ((Any?, Swift.Error?) -> Swift.Void)? = nil)
+  public func callJSFunctionText(_ functionText: Swift.String!, params: [Swift.String]?, completionHandler: ((Any?, Swift.Error?) -> Swift.Void)? = nil)
+}
+public protocol OMCommsDelegate {
+  func messageFromJSClient(data: [Swift.String : Swift.AnyObject], omnisInterface: OmnisAppInterface.OmnisInterface) -> Swift.Bool!
+}
+public struct OMCommsDelegateActions {
+  public static let ACTION_GET_ID: Swift.String
+  public static let ACTION_GET_FORM_ADDRESS: Swift.String
+  public static let ACTION_LOAD_PREF: Swift.String
+  public static let ACTION_SAVE_PREF: Swift.String
+  public static let ACTION_SET_PREFERRED_LOCALE: Swift.String
+  public static let ACTION_SMS: Swift.String
+  public static let ACTION_EMAIL: Swift.String
+  public static let ACTION_PHONECALL: Swift.String
+  public static let ACTION_SHOWURL: Swift.String
+  public static let ACTION_GET_CONTACTS: Swift.String
+  public static let ACTION_VIBRATE: Swift.String
+  public static let ACTION_BEEP: Swift.String
+  public static let ACTION_SHOW_DIALOG: Swift.String
+  public static let ACTION_TAKE_PHOTO: Swift.String
+  public static let ACTION_GET_IMAGE: Swift.String
+  public static let ACTION_GET_BARCODE: Swift.String
+  public static let ACTION_GET_GPS: Swift.String
+  public static let ACTION_EXECUTE_SQL: Swift.String
+  public static let ACTION_SHOW_PDF: Swift.String
+  public static let ACTION_PRINT_PDF: Swift.String
+  public static let ACTION_ENABLE_PUSH_NOTIFICATIONS: Swift.String
+  public static let ACTION_GET_RESOURCE_CONTENT: Swift.String
+}
+public struct SettingNames {
+  public static let USE_LOCAL_TIME: Swift.String
+  public static let EXPECT_SCAFS: Swift.String
+}
+@objc @_inheritsConvenienceInitializers public class Settings : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  public func resetSettings()
+  public func setSetting(name: Swift.String!, value: Any)
+  public func setSettings(dict: [Swift.String : Any])
+  public func getSetting(name: Swift.String!, defaultValue: Any?) -> Any?
+  public func getPreferredLocale() -> Swift.String
+  public func setPreferredLocale(locale: Swift.String?)
+  @objc deinit
+}
+public protocol OMScafHandlerDelegate {
+  func onScafHandlerError(errorText: Swift.String!, action: OmnisAppInterface.ScafAction!) -> Swift.Bool
+  func onScafUpdateCompleted(didUpdate: Swift.Bool!, withErrors: [Swift.String]?, newHtmlPath: Swift.String!) -> Swift.Bool
+  func onOfflineModeConfigured(htmlPath: Swift.String!)
+  func getOfflineTemplateName() -> Swift.String
+}
+extension OmnisAppInterface.OMScafHandlerDelegate {
+  public func onScafUpdateCompleted(didUpdate: Swift.Bool!, withErrors: [Swift.String]?, newHtmlPath: Swift.String!) -> Swift.Bool
+  public func onScafHandlerError(errorText: Swift.String!, action: OmnisAppInterface.ScafAction!) -> Swift.Bool
+  public func getOfflineTemplateName() -> Swift.String
+}
+public enum ScafError : Swift.Error {
+  case NotInitialized
+  public static func == (a: OmnisAppInterface.ScafError, b: OmnisAppInterface.ScafError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ScafAction {
+  case Unknown
+  case CheckFiles
+  case ExtractSCAF
+  case ReadSCAF
+  case AccessForm
+  case UpdateSCAFs
+  public static func == (a: OmnisAppInterface.ScafAction, b: OmnisAppInterface.ScafAction) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class ScafHandler : OmnisAppInterface.OMSubAPI {
+  public var delegate: OmnisAppInterface.OMScafHandlerDelegate?
+  public func initScafController(inSubfolder: Swift.String!, formName: Swift.String!, scafName: Swift.String!, omnisWebUrl: Swift.String!, omnisServer: Swift.String = "", omnisPlugin: Swift.String = "")
+  public func updateScafs()
+  public func loadOfflineForm(queryParams: [Swift.String : Swift.String]? = nil)
+  public static func deleteOfflineFiles(atSubfolder: Swift.String!) -> Swift.Bool
+  public static func moveOfflineFiles(fromSubfolder: Swift.String!, toSubfolder: Swift.String!) throws
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol OMCameraDelegate {
+  func onPhotoCancelled()
+  func onPhotoCaptured(image: UIKit.UIImage)
+}
+public struct OMDialogs {
+  public static var LOADING_OVERLAY_FONT: UIKit.UIFont?
+  public static var LOADING_OVERLAY_TEXT_SIZE: CoreFoundation.CGFloat
+  public static var LOADING_OVERLAY_TEXT_COLOR: UIKit.UIColor
+  public static func showOKMessage(message: Swift.String?, title: Swift.String?, handler: ((UIKit.UIAlertAction) -> Swift.Void)? = nil)
+  public static func showDialog(message: Swift.String?, title: Swift.String?, buttons: [OmnisAppInterface.DialogButton]?)
+  public static func showYesNoMessage(message: Swift.String?, title: Swift.String?, onYes: @escaping () -> Swift.Void, onNo: (() -> Swift.Void)? = nil)
+  public static func promptForInput(message: Swift.String?, title: Swift.String?, defaultText: Swift.String?, callback: @escaping ((Swift.String?) -> Swift.Void))
+  public static func showLoadingOverlay(onView: UIKit.UIView, text: Swift.String? = nil, cancelAppearsAfter: Swift.Int = -1, cancelHandler: (() -> Swift.Bool)? = nil)
+  public static func removeLoadingOverlay(onView: UIKit.UIView)
+}
+public struct DialogButton {
+  public var text: Swift.String?
+  public var buttonID: Swift.UInt8
+  public var style: UIKit.UIAlertActionStyle
+  public var handler: ((UIKit.UIAlertAction) -> Swift.Void)?
+}
+@objc @_inheritsConvenienceInitializers public class LocalDBController : OmnisAppInterface.OMSubAPI {
+  @objc deinit
+  public func initLocalDatabase(dbName: Swift.String = "local.db")
+  public func close()
+  public func sendLocalDBRequest(request: Swift.String!)
+  @objc override dynamic public init()
+}
+extension OmnisAppInterface.OMWebControllerError : Swift.Equatable {}
+extension OmnisAppInterface.OMWebControllerError : Swift.Hashable {}
+extension OmnisAppInterface.ScafError : Swift.Equatable {}
+extension OmnisAppInterface.ScafError : Swift.Hashable {}
+extension OmnisAppInterface.ScafAction : Swift.Equatable {}
+extension OmnisAppInterface.ScafAction : Swift.Hashable {}

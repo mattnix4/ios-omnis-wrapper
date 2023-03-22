@@ -1,0 +1,21 @@
+/*
+ Use this file to provide translations for the Settings.bundle.
+ Keys should correspond to the 'Title's in Settings.bundle/Root.plist
+ */
+
+"Server Settings" = "Server Settings";
+"Omnis Web Url" = "Omnis Web Url";
+"Online Form Name" = "Online Form Name";
+
+"Offline Mode Settings" = "Offline Mode Settings";
+"Offline Mode" = "Offline Mode";
+"Omnis Server" = "Omnis Server";
+"Omnis Plugin" = "Omnis Plugin";
+"Offline Form Name" = "Offline Form Name";
+"App Scaf Name" = "App Scaf Name";
+
+"Local Database" = "Local Database";
+"Local Database Name" = "Local Database Name";
+
+"Push Notifications" = "Push Notifications";
+"Push Notification Server" = "Push Notification Server";

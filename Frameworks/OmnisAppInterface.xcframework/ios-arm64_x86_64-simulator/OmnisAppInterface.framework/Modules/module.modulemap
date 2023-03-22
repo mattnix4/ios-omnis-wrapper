@@ -1,0 +1,11 @@
+framework module OmnisAppInterface {
+  umbrella header "OmnisAppInterface.h"
+
+  export *
+  module * { export * }
+}
+
+module OmnisAppInterface.Swift {
+  header "OmnisAppInterface-Swift.h"
+  requires objc
+}

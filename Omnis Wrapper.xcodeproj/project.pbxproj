@@ -1,0 +1,2029 @@
+{
+  "classes": {},
+  "objectVersion": "52",
+  "archiveVersion": "1",
+  "objects": {
+    "A202A63420E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A202A61A20E10E2D0058CDB9"
+    },
+    "A2AFB32D25A5CF46006D9214": {
+      "isa": "XCConfigurationList",
+      "defaultConfigurationIsVisible": "0",
+      "defaultConfigurationName": "Release",
+      "buildConfigurations": [
+        "A2AFB32E25A5CF46006D9214",
+        "A2AFB32F25A5CF46006D9214"
+      ]
+    },
+    "A2F4B6BE20DAB2DC00FFF66A": {
+      "path": "CreditsViewController.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "A2AFB31E25A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A26545FE257A3CFB00BFCC22"
+    },
+    "A247B32D1FE0028E008440F1": {
+      "buildConfigurationList": "A247B3301FE0028E008440F1",
+      "targets": [
+        "A247B3341FE0028E008440F1",
+        "A202A63120E10F9B0058CDB9"
+      ],
+      "developmentRegion": "en",
+      "knownRegions": [
+        "en",
+        "Base",
+        "de",
+        "fr",
+        "it"
+      ],
+      "isa": "PBXProject",
+      "compatibilityVersion": "Xcode 8.0",
+      "productRefGroup": "A247B3361FE0028E008440F1",
+      "projectDirPath": "",
+      "attributes": {
+        "LastSwiftUpdateCheck": "0920",
+        "LastUpgradeCheck": "0940",
+        "ORGANIZATIONNAME": "Omnis Software",
+        "TargetAttributes": {
+          "A247B3341FE0028E008440F1": {
+            "LastSwiftMigration": "0930",
+            "ProvisioningStyle": "Manual",
+            "CreatedOnToolsVersion": "9.2"
+          },
+          "A202A63120E10F9B0058CDB9": {
+            "SystemCapabilities": {
+              "com.apple.Push": {
+                "enabled": "1"
+              }
+            },
+            "ProvisioningStyle": "Manual"
+          },
+          "A2AFB30A25A5CF46006D9214": {
+            "ProvisioningStyle": "Manual"
+          }
+        }
+      },
+      "hasScannedForEncodings": "0",
+      "projectRoot": "",
+      "mainGroup": "A247B32C1FE0028E008440F1"
+    },
+    "A25BC56425AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2254769223FDA8800A45F3D"
+    },
+    "A25BC58825AB979200F4293B": {
+      "buildActionMask": "2147483647",
+      "dstSubfolderSpec": "10",
+      "isa": "PBXCopyFilesBuildPhase",
+      "runOnlyForDeploymentPostprocessing": "0",
+      "dstPath": "",
+      "files": [
+        "A25BC58725AB979200F4293B"
+      ],
+      "name": "Embed Frameworks"
+    },
+    "A226AC6722A930E900199D2A": {
+      "path": "jsctempl_pre10.0.1.htm",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.html",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A25BC54925AB963C00F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A25BC53E25AB959300F4293B"
+    },
+    "A25BC55525AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A20DFFE4206D2BFC002CEFEE"
+    },
+    "A202A64B20E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C520DBBA0A00FFF66A"
+    },
+    "A2AFB31125A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33A1FE0028E008440F1"
+    },
+    "A2DE29F120E3C93300C3EB96": {
+      "path": "Firebase/Analytics/nanopb.framework",
+      "isa": "PBXFileReference",
+      "name": "nanopb.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A2EAB9C91FFE67A600CD42CC": {
+      "path": "System/Library/Frameworks/AVFoundation.framework",
+      "isa": "PBXFileReference",
+      "name": "AVFoundation.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "SDKROOT"
+    },
+    "A202A65720E10F9B0058CDB9": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "PUSH_NOTIFICATIONS",
+        "HEADER_SEARCH_PATHS": "Firebase",
+        "MARKETING_VERSION": "3.2.4",
+        "CODE_SIGN_ENTITLEMENTS": "OmnisJSWrapper_PushNotifications.entitlements",
+        "FRAMEWORK_SEARCH_PATHS": [
+          "$(inherited)",
+          "$(PROJECT_DIR)/Firebase/Analytics",
+          "$(PROJECT_DIR)/Firebase/Messaging"
+        ],
+        "LD_RUNPATH_SEARCH_PATHS": [
+          "$(inherited)",
+          "@executable_path/Frameworks"
+        ],
+        "PRODUCT_BUNDLE_IDENTIFIER": "net.omnis.Omnis-Wrapper-Push",
+        "OTHER_LDFLAGS": "-ObjC",
+        "GCC_PREPROCESSOR_DEFINITIONS": "PUSH_NOTIFICATIONS"
+      },
+      "name": "Release"
+    },
+    "A202A64820E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A8317520177527005A3D73"
+    },
+    "A202A62820E10E3A0058CDB9": {
+      "path": "PushNotifications",
+      "isa": "PBXGroup",
+      "children": [
+        "A2DE29FC20E3CEE500C3EB96",
+        "A202A63020E10F790058CDB9",
+        "A2DE29FA20E3C98300C3EB96"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A25BC57B25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC71B207B868100E7CF70"
+    },
+    "A225476D223FDA9600A45F3D": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29EA20E39D4700C3EB96"
+    },
+    "A202A63020E10F790058CDB9": {
+      "path": "Firebase/Firebase.h",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.h",
+      "name": "Firebase.h",
+      "sourceTree": "SOURCE_ROOT",
+      "fileEncoding": "4"
+    },
+    "A20DFFE5206D2BFC002CEFEE": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A20DFFE4206D2BFC002CEFEE"
+    },
+    "A27CEAB8273A9AAE00A95FA0": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A27CEAB6273A9A9500A95FA0"
+    },
+    "A202A61D20E10E2D0058CDB9": {
+      "path": "CRToastView.m",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.objc",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A25BC57825AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A26F8A8E20766CD500C53337"
+    },
+    "A2F4B6C920DBBAE700FFF66A": {
+      "path": "Credits",
+      "isa": "PBXGroup",
+      "children": [
+        "A2F4B6CA20DBBAF200FFF66A"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A2A25AEE229E966A00DC5294": {
+      "isa": "PBXVariantGroup",
+      "name": "Localizable.strings",
+      "children": [
+        "A2A25AED229E966A00DC5294",
+        "A2A25AEF229E973C00DC5294",
+        "A2A25AF0229E991300DC5294",
+        "A2A25B01229EA85B00DC5294"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A25BC56925AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29E420E39CE500C3EB96"
+    },
+    "A2AFB32525A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A226AC6722A930E900199D2A"
+    },
+    "A2F4B6C020DBA2E200FFF66A": {
+      "path": "WebBaseViewController.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "A2AFB31625A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6BC20DAA90700FFF66A"
+    },
+    "A2A25B01229EA85B00DC5294": {
+      "path": "it.lproj/Localizable.strings",
+      "isa": "PBXFileReference",
+      "name": "it",
+      "lastKnownFileType": "text.plist.strings",
+      "sourceTree": "<group>"
+    },
+    "A2A8317520177527005A3D73": {
+      "path": "jsctempl.htm",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.html",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A2A25AF6229E9BA500DC5294": {
+      "path": "en.lproj/InfoPlist.strings",
+      "isa": "PBXFileReference",
+      "name": "en",
+      "lastKnownFileType": "text.plist.strings",
+      "sourceTree": "<group>"
+    },
+    "A25BC55025AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6BE20DAB2DC00FFF66A"
+    },
+    "A202A65220E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C620DBBA0A00FFF66A"
+    },
+    "A25BC55E25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6BC20DAA90700FFF66A"
+    },
+    "A2F4B6C720DBBA0B00FFF66A": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C520DBBA0A00FFF66A"
+    },
+    "A202A64320E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6BC20DAA90700FFF66A"
+    },
+    "A25BC54F25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A202A61A20E10E2D0058CDB9"
+    },
+    "A2AFB30B25A5CF46006D9214": {
+      "isa": "PBXSourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A22858E4264099FB00502D54",
+        "A2AFB30C25A5CF46006D9214",
+        "A2AFB30D25A5CF46006D9214",
+        "A2AFB30E25A5CF46006D9214",
+        "A2AFB30F25A5CF46006D9214",
+        "A2AFB31025A5CF46006D9214",
+        "A2AFB31125A5CF46006D9214",
+        "A2AFB31225A5CF46006D9214",
+        "A2AFB31325A5CF46006D9214",
+        "A2AFB31425A5CF46006D9214",
+        "A2AFB31525A5CF46006D9214",
+        "A2AFB31625A5CF46006D9214"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A2254766223FDA8800A45F3D": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29F120E3C93300C3EB96"
+    },
+    "A22858F02641847900502D54": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A22858E2264098E600502D54"
+    },
+    "A2F4B6C420DBB9FA00FFF66A": {
+      "path": "About",
+      "isa": "PBXGroup",
+      "children": [
+        "A2F4B6C520DBBA0A00FFF66A",
+        "A2F4B6C620DBBA0A00FFF66A"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A25BC58225AB976500F4293B": {
+      "path": "Dev-PushNotifications.app",
+      "isa": "PBXFileReference",
+      "includeInIndex": "0",
+      "explicitFileType": "wrapper.application",
+      "sourceTree": "BUILT_PRODUCTS_DIR"
+    },
+    "A247B33C1FE0028E008440F1": {
+      "isa": "PBXVariantGroup",
+      "name": "Main.storyboard",
+      "children": [
+        "A247B33D1FE0028E008440F1"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A25BC57325AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C520DBBA0A00FFF66A"
+    },
+    "A2AFB32025A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33C1FE0028E008440F1"
+    },
+    "A21AC71A207B868000E7CF70": {
+      "path": "arrow.png",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "image.png",
+      "sourceTree": "<group>"
+    },
+    "A2F4B6BF20DAB2DC00FFF66A": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6BE20DAB2DC00FFF66A"
+    },
+    "A2AFB31F25A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AF7229E9BA500DC5294"
+    },
+    "A27CEAB6273A9A9500A95FA0": {
+      "path": "jsctempl_pre_10.2_31315.htm",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.html",
+      "sourceTree": "<group>"
+    },
+    "A25BC53E25AB959300F4293B": {
+      "path": "Frameworks/OmnisAppInterface.xcframework",
+      "isa": "PBXFileReference",
+      "name": "OmnisAppInterface.xcframework",
+      "lastKnownFileType": "wrapper.xcframework",
+      "sourceTree": "<group>"
+    },
+    "A2A25AFF229E9ED700DC5294": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AFE229E9ED700DC5294"
+    },
+    "A25BC55625AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AFE229E9ED700DC5294"
+    },
+    "A2A25AEF229E973C00DC5294": {
+      "path": "fr.lproj/Localizable.strings",
+      "isa": "PBXFileReference",
+      "name": "fr",
+      "lastKnownFileType": "text.plist.strings",
+      "sourceTree": "<group>"
+    },
+    "A2DE29F220E3C93300C3EB96": {
+      "path": "Firebase/Analytics/FirebaseCoreDiagnostics.framework",
+      "isa": "PBXFileReference",
+      "name": "FirebaseCoreDiagnostics.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A202A64920E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A20DFFE3206D2BCF002CEFEE"
+    },
+    "A25BC57C25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C620DBBA0A00FFF66A"
+    },
+    "A225476E223FDA9600A45F3D": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29F820E3C94500C3EB96"
+    },
+    "A247B3341FE0028E008440F1": {
+      "buildConfigurationList": "A247B3471FE0028E008440F1",
+      "productReference": "A247B3351FE0028E008440F1",
+      "productType": "com.apple.product-type.application",
+      "productName": "Omnis Wrapper",
+      "isa": "PBXNativeTarget",
+      "buildPhases": [
+        "A247B3311FE0028E008440F1",
+        "A247B3321FE0028E008440F1",
+        "A247B3331FE0028E008440F1",
+        "A25BC54125AB959300F4293B"
+      ],
+      "dependencies": [],
+      "name": "OmnisJSWrapper",
+      "buildRules": []
+    },
+    "A2DE29E420E39CE500C3EB96": {
+      "path": "Firebase/Analytics/FirebaseInstanceID.framework",
+      "isa": "PBXFileReference",
+      "name": "FirebaseInstanceID.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A25BC56D25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AF7229E9BA500DC5294"
+    },
+    "A2AFB31A25A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33F1FE0028E008440F1"
+    },
+    "A2F4B6C120DBA2E200FFF66A": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C020DBA2E200FFF66A"
+    },
+    "A2AFB31725A5CF46006D9214": {
+      "isa": "PBXFrameworksBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A270CC9925B2081A0090B58C"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A2A8317620177527005A3D73": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A8317520177527005A3D73"
+    },
+    "A25BC55125AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A202A61D20E10E2D0058CDB9"
+    },
+    "A247B3481FE0028E008440F1": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "FRAMEWORK_SEARCH_PATHS": [
+          "$(PROJECT_DIR)/FrameworksDev",
+          "$(PROJECT_DIR)/Frameworks"
+        ],
+        "LD_RUNPATH_SEARCH_PATHS": "@executable_path/Frameworks",
+        "MARKETING_VERSION": "3.2.4",
+        "PRODUCT_BUNDLE_IDENTIFIER": "net.omnis.Omnis-Wrapper"
+      },
+      "name": "Debug"
+    },
+    "A202A64420E10F9B0058CDB9": {
+      "isa": "PBXFrameworksBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A225476D223FDA9600A45F3D",
+        "A225476E223FDA9600A45F3D",
+        "A225476A223FDA8800A45F3D",
+        "A225476B223FDA8800A45F3D",
+        "A225476C223FDA8800A45F3D",
+        "A2254762223FDA8800A45F3D",
+        "A25BC54925AB963C00F4293B",
+        "A2254763223FDA8800A45F3D",
+        "A2254764223FDA8800A45F3D",
+        "A2254765223FDA8800A45F3D",
+        "A2254766223FDA8800A45F3D"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A26F8A8E20766CD500C53337": {
+      "path": "Settings.bundle",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "wrapper.plug-in",
+      "sourceTree": "<group>"
+    },
+    "A202A63520E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6BE20DAB2DC00FFF66A"
+    },
+    "A2AFB32E25A5CF46006D9214": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "MARKETING_VERSION": "3.2.4",
+        "FRAMEWORK_SEARCH_PATHS": [
+          "$(PROJECT_DIR)/FrameworksDev",
+          "$(PROJECT_DIR)/Frameworks"
+        ],
+        "LD_RUNPATH_SEARCH_PATHS": "@executable_path/Frameworks",
+        "PROVISIONING_PROFILE_SPECIFIER": "General iOS Dev",
+        "PRODUCT_BUNDLE_IDENTIFIER": "net.omnis.Omnis-Wrapper",
+        "PRODUCT_NAME": "$(TARGET_NAME)",
+        "DEVELOPMENT_TEAM": "B6959HWR8Y"
+      },
+      "name": "Debug"
+    },
+    "A2F4B6BC20DAA90700FFF66A": {
+      "path": "AboutViewController.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "A247B33D1FE0028E008440F1": {
+      "path": "Base.lproj/Main.storyboard",
+      "isa": "PBXFileReference",
+      "name": "Base",
+      "lastKnownFileType": "file.storyboard",
+      "sourceTree": "<group>"
+    },
+    "A25BC57425AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AEE229E966A00DC5294"
+    },
+    "A2DE29FC20E3CEE500C3EB96": {
+      "path": "Firebase/module.modulemap",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.module-map",
+      "name": "module.modulemap",
+      "sourceTree": "SOURCE_ROOT",
+      "fileEncoding": "4"
+    },
+    "A226AC6822A930E900199D2A": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A226AC6722A930E900199D2A"
+    },
+    "A25BC56525AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29E520E39CE500C3EB96"
+    },
+    "A2AFB32125A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C520DBBA0A00FFF66A"
+    },
+    "A2AFB31225A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A20DFFE4206D2BFC002CEFEE"
+    },
+    "A202A65820E10F9B0058CDB9": {
+      "path": "OmnisJSWrapper_PushNotifications.app",
+      "isa": "PBXFileReference",
+      "includeInIndex": "0",
+      "explicitFileType": "wrapper.application",
+      "sourceTree": "BUILT_PRODUCTS_DIR"
+    },
+    "A25BC54025AB959300F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A25BC53E25AB959300F4293B",
+      "settings": {
+        "ATTRIBUTES": [
+          "CodeSignOnCopy",
+          "RemoveHeadersOnCopy"
+        ]
+      }
+    },
+    "A247B37A1FE0081F008440F1": {
+      "isa": "PBXGroup",
+      "name": "Frameworks",
+      "children": [
+        "A270CC9825B2081A0090B58C",
+        "A25BC58525AB979200F4293B",
+        "A25BC53E25AB959300F4293B",
+        "A2254767223FDA8800A45F3D",
+        "A2254768223FDA8800A45F3D",
+        "A2254769223FDA8800A45F3D",
+        "A2A2D9A320E4D44900CDD134",
+        "A2A2D99E20E3DA2600CDD134",
+        "A2DE29F820E3C94500C3EB96",
+        "A2DE29F220E3C93300C3EB96",
+        "A2DE29EF20E3C93200C3EB96",
+        "A2DE29F020E3C93300C3EB96",
+        "A2DE29F120E3C93300C3EB96",
+        "A2DE29EA20E39D4700C3EB96",
+        "A2DE29E520E39CE500C3EB96",
+        "A2DE29E620E39CE500C3EB96",
+        "A2DE29E420E39CE500C3EB96",
+        "A2EAB9C91FFE67A600CD42CC"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A2A25B00229E9ED700DC5294": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AFE229E9ED700DC5294"
+    },
+    "A27CEAB9273A9AAE00A95FA0": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A27CEAB6273A9A9500A95FA0"
+    },
+    "A202A61E20E10E2D0058CDB9": {
+      "path": "CRToastManager.h",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.h",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A202A63E20E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6D020DD043800FFF66A"
+    },
+    "A2A2D9A320E4D44900CDD134": {
+      "path": "System/Library/Frameworks/AudioToolbox.framework",
+      "isa": "PBXFileReference",
+      "name": "AudioToolbox.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "SDKROOT"
+    },
+    "A25BC57925AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A226AC6722A930E900199D2A"
+    },
+    "A21AC71B207B868100E7CF70": {
+      "path": "arrow@2x.png",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "image.png",
+      "sourceTree": "<group>"
+    },
+    "A2AFB32625A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A26F8A8E20766CD500C53337"
+    },
+    "A247B3351FE0028E008440F1": {
+      "path": "OmnisJSWrapper.app",
+      "isa": "PBXFileReference",
+      "includeInIndex": "0",
+      "explicitFileType": "wrapper.application",
+      "sourceTree": "BUILT_PRODUCTS_DIR"
+    },
+    "A25BC56025AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29EA20E39D4700C3EB96"
+    },
+    "A2DE29E520E39CE500C3EB96": {
+      "path": "Firebase/Analytics/FirebaseAnalytics.framework",
+      "isa": "PBXFileReference",
+      "name": "FirebaseAnalytics.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A25BC56E25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33F1FE0028E008440F1"
+    },
+    "A2A25AF7229E9BA500DC5294": {
+      "isa": "PBXVariantGroup",
+      "name": "InfoPlist.strings",
+      "children": [
+        "A2A25AF6229E9BA500DC5294"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A2F8BCB620E6257F00F52174": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B3381FE0028E008440F1"
+    },
+    "A25BC55F25AB976500F4293B": {
+      "isa": "PBXFrameworksBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A25BC56025AB976500F4293B",
+        "A25BC56125AB976500F4293B",
+        "A25BC56225AB976500F4293B",
+        "A25BC56325AB976500F4293B",
+        "A25BC56425AB976500F4293B",
+        "A25BC56525AB976500F4293B",
+        "A25BC56725AB976500F4293B",
+        "A25BC56825AB976500F4293B",
+        "A25BC56925AB976500F4293B",
+        "A25BC56A25AB976500F4293B",
+        "A25BC58625AB979200F4293B"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A225476A223FDA8800A45F3D": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2254767223FDA8800A45F3D"
+    },
+    "A2AFB31B25A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A8317520177527005A3D73"
+    },
+    "A2F4B6C820DBBA0B00FFF66A": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C620DBBA0A00FFF66A"
+    },
+    "A29B9B2C2396830300AC4C3C": {
+      "path": "LaunchScreen.storyboard",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "file.storyboard",
+      "sourceTree": "<group>"
+    },
+    "A2AFB30C25A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC717207B7CB500E7CF70"
+    },
+    "A2254767223FDA8800A45F3D": {
+      "path": "Firebase/Analytics/FIRAnalyticsConnector.framework",
+      "isa": "PBXFileReference",
+      "name": "FIRAnalyticsConnector.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A2DE29EA20E39D4700C3EB96": {
+      "path": "Firebase/Messaging/FirebaseMessaging.framework",
+      "isa": "PBXFileReference",
+      "name": "FirebaseMessaging.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A25BC55225AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29FA20E3C98300C3EB96"
+    },
+    "A247B3491FE0028E008440F1": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "LD_RUNPATH_SEARCH_PATHS": "@executable_path/Frameworks",
+        "MARKETING_VERSION": "3.2.4",
+        "PRODUCT_BUNDLE_IDENTIFIER": "net.omnis.Omnis-Wrapper"
+      },
+      "name": "Release"
+    },
+    "A2A2D99E20E3DA2600CDD134": {
+      "path": "System/Library/Frameworks/UserNotifications.framework",
+      "isa": "PBXFileReference",
+      "name": "UserNotifications.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "SDKROOT"
+    },
+    "A2AFB33025A5CF46006D9214": {
+      "path": "Dev-Wrapper.app",
+      "isa": "PBXFileReference",
+      "includeInIndex": "0",
+      "explicitFileType": "wrapper.application",
+      "sourceTree": "BUILT_PRODUCTS_DIR"
+    },
+    "A202A61620E10E2D0058CDB9": {
+      "path": "CRToast",
+      "isa": "PBXGroup",
+      "children": [
+        "A202A61720E10E2D0058CDB9",
+        "A202A61820E10E2D0058CDB9",
+        "A202A61920E10E2D0058CDB9",
+        "A202A61A20E10E2D0058CDB9",
+        "A202A61B20E10E2D0058CDB9",
+        "A202A61C20E10E2D0058CDB9",
+        "A202A61D20E10E2D0058CDB9",
+        "A202A61E20E10E2D0058CDB9",
+        "A202A61F20E10E2D0058CDB9",
+        "A202A62020E10E2D0058CDB9",
+        "A202A62120E10E2D0058CDB9",
+        "A202A62220E10E2D0058CDB9"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A202A63620E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A202A61D20E10E2D0058CDB9"
+    },
+    "A2AFB32F25A5CF46006D9214": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "DEVELOPMENT_TEAM": "B6959HWR8Y",
+        "PROVISIONING_PROFILE_SPECIFIER": "General iOS Dev",
+        "PRODUCT_BUNDLE_IDENTIFIER": "net.omnis.Omnis-Wrapper",
+        "LD_RUNPATH_SEARCH_PATHS": "@executable_path/Frameworks",
+        "MARKETING_VERSION": "3.2.4",
+        "PRODUCT_NAME": "$(TARGET_NAME)"
+      },
+      "name": "Release"
+    },
+    "A247B3301FE0028E008440F1": {
+      "isa": "XCConfigurationList",
+      "defaultConfigurationIsVisible": "0",
+      "defaultConfigurationName": "Release",
+      "buildConfigurations": [
+        "A247B3451FE0028E008440F1",
+        "A247B3461FE0028E008440F1"
+      ]
+    },
+    "A2F4B6CE20DCF9FE00FFF66A": {
+      "path": "Tools.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "A25BC55A25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A25884B9229558E20061DA53"
+    },
+    "A270CC9A25B2081A0090B58C": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A270CC9825B2081A0090B58C",
+      "settings": {
+        "ATTRIBUTES": [
+          "CodeSignOnCopy",
+          "RemoveHeadersOnCopy"
+        ]
+      }
+    },
+    "A226AC6922A930E900199D2A": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A226AC6722A930E900199D2A"
+    },
+    "A25BC53F25AB959300F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A25BC53E25AB959300F4293B"
+    },
+    "A25BC55725AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A202A61F20E10E2D0058CDB9"
+    },
+    "A202A64D20E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2EAB9D71FFE931100CD42CC"
+    },
+    "A2254762223FDA8800A45F3D": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29E520E39CE500C3EB96"
+    },
+    "A2AFB31325A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6D020DD043800FFF66A"
+    },
+    "A247B3441FE0028E008440F1": {
+      "path": "Info.plist",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.plist.xml",
+      "sourceTree": "<group>"
+    },
+    "A202A62020E10E2D0058CDB9": {
+      "path": "CRToastLayoutHelpers.h",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.h",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A202A64020E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A202A61820E10E2D0058CDB9"
+    },
+    "A22858E5264099FF00502D54": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A22858E2264098E600502D54"
+    },
+    "A202A63120E10F9B0058CDB9": {
+      "buildConfigurationList": "A202A65520E10F9B0058CDB9",
+      "productReference": "A202A65820E10F9B0058CDB9",
+      "productType": "com.apple.product-type.application",
+      "productName": "Omnis Wrapper",
+      "isa": "PBXNativeTarget",
+      "buildPhases": [
+        "A202A63220E10F9B0058CDB9",
+        "A202A64420E10F9B0058CDB9",
+        "A202A64620E10F9B0058CDB9",
+        "A25BC54B25AB963C00F4293B"
+      ],
+      "dependencies": [],
+      "name": "OmnisJSWrapper_PushNotifications",
+      "buildRules": []
+    },
+    "A202A61F20E10E2D0058CDB9": {
+      "path": "CRToastWindow.m",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.objc",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A2AFB32725A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC71A207B868000E7CF70"
+    },
+    "A25BC56125AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29F820E3C94500C3EB96"
+    },
+    "A25BC58525AB979200F4293B": {
+      "path": "OmnisAppInterface.framework",
+      "isa": "PBXFileReference",
+      "explicitFileType": "wrapper.framework",
+      "sourceTree": "BUILT_PRODUCTS_DIR"
+    },
+    "A225476B223FDA8800A45F3D": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2254768223FDA8800A45F3D"
+    },
+    "A2AFB30D25A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A25884B9229558E20061DA53"
+    },
+    "A2254768223FDA8800A45F3D": {
+      "path": "Firebase/Analytics/GoogleAppMeasurement.framework",
+      "isa": "PBXFileReference",
+      "name": "GoogleAppMeasurement.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A26F8A8F20766CD500C53337": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A26F8A8E20766CD500C53337"
+    },
+    "A2F4B6BD20DAA90700FFF66A": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6BC20DAA90700FFF66A"
+    },
+    "A247B33E1FE0028E008440F1": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33C1FE0028E008440F1"
+    },
+    "A25BC57525AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2EAB9D71FFE931100CD42CC"
+    },
+    "A202A61A20E10E2D0058CDB9": {
+      "path": "CRToastViewController.m",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.objc",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A202A63A20E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A202A61F20E10E2D0058CDB9"
+    },
+    "A2EAB9D61FFE92FE00CD42CC": {
+      "path": "Sounds",
+      "isa": "PBXGroup",
+      "children": [
+        "A2EAB9D71FFE931100CD42CC"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A2A25AEB229E966A00DC5294": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AEE229E966A00DC5294"
+    },
+    "A2AFB32225A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AEE229E966A00DC5294"
+    },
+    "A202A63720E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33A1FE0028E008440F1"
+    },
+    "A202A61720E10E2D0058CDB9": {
+      "path": "CRToastWindow.h",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.h",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A247B3311FE0028E008440F1": {
+      "isa": "PBXSourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A22858E5264099FF00502D54",
+        "A21AC719207B7CB500E7CF70",
+        "A25884BA229558E20061DA53",
+        "A2A25AFF229E9ED700DC5294",
+        "A2F4B6BF20DAB2DC00FFF66A",
+        "A2F8BCB620E6257F00F52174",
+        "A247B33B1FE0028E008440F1",
+        "A20DFFE5206D2BFC002CEFEE",
+        "A2F4B6D120DD043800FFF66A",
+        "A2F4B6CF20DCF9FE00FFF66A",
+        "A2F4B6C120DBA2E200FFF66A",
+        "A2F4B6BD20DAA90700FFF66A"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A2F4B6D020DD043800FFF66A": {
+      "path": "BaseViewController.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "A25BC54125AB959300F4293B": {
+      "buildActionMask": "2147483647",
+      "dstSubfolderSpec": "10",
+      "isa": "PBXCopyFilesBuildPhase",
+      "runOnlyForDeploymentPostprocessing": "0",
+      "dstPath": "",
+      "files": [
+        "A25BC54025AB959300F4293B"
+      ],
+      "name": "Embed Frameworks"
+    },
+    "A21AC717207B7CB500E7CF70": {
+      "path": "PullToRefreshView.m",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.objc",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A25BC55B25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A202A61820E10E2D0058CDB9"
+    },
+    "A25BC55825AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B3381FE0028E008440F1"
+    },
+    "A202A64E20E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6CA20DBBAF200FFF66A"
+    },
+    "A2254763223FDA8800A45F3D": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29E620E39CE500C3EB96"
+    },
+    "A25884BA229558E20061DA53": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A25884B9229558E20061DA53"
+    },
+    "A21AC71C207B868100E7CF70": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC71A207B868000E7CF70"
+    },
+    "A26545FE257A3CFB00BFCC22": {
+      "path": "jsctempl_pre10.2.htm",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.html",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A247B3451FE0028E008440F1": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "CURRENT_PROJECT_VERSION": "1",
+        "CLANG_WARN_RANGE_LOOP_ANALYSIS": "YES",
+        "FRAMEWORK_SEARCH_PATHS": "$(PROJECT_DIR)/Frameworks",
+        "CODE_SIGN_IDENTITY": "iPhone Developer",
+        "SWIFT_OPTIMIZATION_LEVEL": "-Onone",
+        "CLANG_WARN_INFINITE_RECURSION": "YES",
+        "ONLY_ACTIVE_ARCH": "YES",
+        "GCC_WARN_UNUSED_VARIABLE": "YES",
+        "CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING": "YES",
+        "INFOPLIST_FILE": "Omnis Wrapper/Info.plist",
+        "CLANG_WARN_UNGUARDED_AVAILABILITY": "YES_AGGRESSIVE",
+        "COPY_PHASE_STRIP": "NO",
+        "CLANG_WARN_BOOL_CONVERSION": "YES",
+        "CLANG_WARN_ENUM_CONVERSION": "YES",
+        "CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS": "YES",
+        "CLANG_WARN_COMMA": "YES",
+        "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "DEBUG ${EXTRA_BEHAVIOR_FLAGS}",
+        "CLANG_WARN_INT_CONVERSION": "YES",
+        "SWIFT_VERSION": "4.0",
+        "ENABLE_STRICT_OBJC_MSGSEND": "YES",
+        "TARGETED_DEVICE_FAMILY": "1,2",
+        "CLANG_WARN_SUSPICIOUS_MOVE": "YES",
+        "CLANG_WARN_EMPTY_BODY": "YES",
+        "CLANG_WARN_DOCUMENTATION_COMMENTS": "YES",
+        "SDKROOT": "iphoneos",
+        "CODE_SIGN_STYLE": "Manual",
+        "MTL_ENABLE_DEBUG_INFO": "YES",
+        "IPHONEOS_DEPLOYMENT_TARGET": "11.2",
+        "LD_RUNPATH_SEARCH_PATHS": "@executable_path/Frameworks",
+        "CLANG_CXX_LIBRARY": "libc++",
+        "CLANG_ENABLE_OBJC_ARC": "YES",
+        "GCC_WARN_UNINITIALIZED_AUTOS": "YES_AGGRESSIVE",
+        "GCC_C_LANGUAGE_STANDARD": "gnu11",
+        "CLANG_ENABLE_MODULES": "YES",
+        "ALWAYS_SEARCH_USER_PATHS": "NO",
+        "MARKETING_VERSION": "3.2.3",
+        "CLANG_WARN_DIRECT_OBJC_ISA_USAGE": "YES_ERROR",
+        "ENABLE_TESTABILITY": "YES",
+        "CLANG_WARN_CONSTANT_CONVERSION": "YES",
+        "GCC_NO_COMMON_BLOCKS": "YES",
+        "CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF": "YES",
+        "CLANG_WARN_OBJC_ROOT_CLASS": "YES_ERROR",
+        "PRODUCT_NAME": "$(TARGET_NAME)",
+        "GCC_WARN_64_TO_32_BIT_CONVERSION": "YES",
+        "CLANG_CXX_LANGUAGE_STANDARD": "gnu++14",
+        "GCC_DYNAMIC_NO_PIC": "NO",
+        "CLANG_WARN__DUPLICATE_METHOD_MATCH": "YES",
+        "DEBUG_INFORMATION_FORMAT": "dwarf",
+        "SWIFT_OBJC_BRIDGING_HEADER": "Omnis Wrapper/Omnis Wrapper-Bridging-Header.h",
+        "GCC_WARN_UNDECLARED_SELECTOR": "YES",
+        "CLANG_ANALYZER_NONNULL": "YES",
+        "CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION": "YES_AGGRESSIVE",
+        "GCC_OPTIMIZATION_LEVEL": "0",
+        "CLANG_WARN_STRICT_PROTOTYPES": "YES",
+        "GCC_WARN_ABOUT_RETURN_TYPE": "YES_ERROR",
+        "GCC_WARN_UNUSED_FUNCTION": "YES",
+        "CLANG_WARN_UNREACHABLE_CODE": "YES",
+        "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
+        "EXTRA_BEHAVIOR_FLAGS": "",
+        "CLANG_WARN_NON_LITERAL_NULL_CONVERSION": "YES",
+        "GCC_PREPROCESSOR_DEFINITIONS": [
+          "DEBUG=1",
+          "$(inherited)"
+        ],
+        "CLANG_WARN_OBJC_LITERAL_CONVERSION": "YES"
+      },
+      "name": "Debug"
+    },
+    "A25BC57025AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A8317520177527005A3D73"
+    },
+    "A202A62120E10E2D0058CDB9": {
+      "path": "CRToastConfig.m",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.objc",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A2F4B6CA20DBBAF200FFF66A": {
+      "path": "credits.html",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.html",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A2A25AF0229E991300DC5294": {
+      "path": "de.lproj/Localizable.strings",
+      "isa": "PBXFileReference",
+      "name": "de",
+      "lastKnownFileType": "text.plist.strings",
+      "sourceTree": "<group>"
+    },
+    "A247B3361FE0028E008440F1": {
+      "isa": "PBXGroup",
+      "name": "Products",
+      "children": [
+        "A247B3351FE0028E008440F1",
+        "A202A65820E10F9B0058CDB9",
+        "A2AFB33025A5CF46006D9214",
+        "A25BC58225AB976500F4293B"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A2DE29E620E39CE500C3EB96": {
+      "path": "Firebase/Analytics/FirebaseCore.framework",
+      "isa": "PBXFileReference",
+      "name": "FirebaseCore.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A25BC56F25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A26545FE257A3CFB00BFCC22"
+    },
+    "A2F8BCB720E627B100F52174": {
+      "path": "GoogleService-Info.plist",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.plist.xml",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A2AFB32B25A5CF46006D9214": {
+      "buildActionMask": "2147483647",
+      "dstSubfolderSpec": "10",
+      "isa": "PBXCopyFilesBuildPhase",
+      "runOnlyForDeploymentPostprocessing": "0",
+      "dstPath": "",
+      "files": [
+        "A270CC9A25B2081A0090B58C"
+      ],
+      "name": "Embed Frameworks"
+    },
+    "A202A63220E10F9B0058CDB9": {
+      "isa": "PBXSourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A22858F12641847A00502D54",
+        "A202A63320E10F9B0058CDB9",
+        "A202A63420E10F9B0058CDB9",
+        "A202A63520E10F9B0058CDB9",
+        "A202A63620E10F9B0058CDB9",
+        "A2DE29FB20E3C98300C3EB96",
+        "A202A63720E10F9B0058CDB9",
+        "A202A63820E10F9B0058CDB9",
+        "A202A63920E10F9B0058CDB9",
+        "A2A25B00229E9ED700DC5294",
+        "A202A63A20E10F9B0058CDB9",
+        "A202A63C20E10F9B0058CDB9",
+        "A202A63E20E10F9B0058CDB9",
+        "A25884BB229558E20061DA53",
+        "A202A64020E10F9B0058CDB9",
+        "A202A64120E10F9B0058CDB9",
+        "A202A64220E10F9B0058CDB9",
+        "A202A64320E10F9B0058CDB9"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A2AFB31C25A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A20DFFE3206D2BCF002CEFEE"
+    },
+    "A20DFFE6206D329F002CEFEE": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A20DFFE3206D2BCF002CEFEE"
+    },
+    "A25BC54A25AB963C00F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A25BC53E25AB959300F4293B",
+      "settings": {
+        "ATTRIBUTES": [
+          "CodeSignOnCopy",
+          "RemoveHeadersOnCopy"
+        ]
+      }
+    },
+    "A2DE29FA20E3C98300C3EB96": {
+      "path": "OMPushNotificationManager.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "A29B9B2D2396830300AC4C3C": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A29B9B2C2396830300AC4C3C"
+    },
+    "A25BC56225AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2254767223FDA8800A45F3D"
+    },
+    "A25BC58625AB979200F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A25BC58525AB979200F4293B"
+    },
+    "A2AFB31925A5CF46006D9214": {
+      "isa": "PBXResourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A2AFB31A25A5CF46006D9214",
+        "A2AFB31B25A5CF46006D9214",
+        "A2AFB31C25A5CF46006D9214",
+        "A2AFB31D25A5CF46006D9214",
+        "A2AFB31E25A5CF46006D9214",
+        "A2AFB31F25A5CF46006D9214",
+        "A2AFB32025A5CF46006D9214",
+        "A2AFB32125A5CF46006D9214",
+        "A2AFB32225A5CF46006D9214",
+        "A27CEAB8273A9AAE00A95FA0",
+        "A2AFB32325A5CF46006D9214",
+        "A2AFB32425A5CF46006D9214",
+        "A2AFB32525A5CF46006D9214",
+        "A2AFB32625A5CF46006D9214",
+        "A2AFB32725A5CF46006D9214",
+        "A2AFB32825A5CF46006D9214",
+        "A2AFB32925A5CF46006D9214"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A25BC55325AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33A1FE0028E008440F1"
+    },
+    "A202A65520E10F9B0058CDB9": {
+      "isa": "XCConfigurationList",
+      "defaultConfigurationIsVisible": "0",
+      "defaultConfigurationName": "Release",
+      "buildConfigurations": [
+        "A202A65620E10F9B0058CDB9",
+        "A202A65720E10F9B0058CDB9"
+      ]
+    },
+    "A2EAB9D71FFE931100CD42CC": {
+      "path": "notify.wav",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "audio.wav",
+      "sourceTree": "<group>"
+    },
+    "A202A64620E10F9B0058CDB9": {
+      "isa": "PBXResourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A2F8BCB820E627B200F52174",
+        "A2A25AF5229E9BA500DC5294",
+        "A202A64720E10F9B0058CDB9",
+        "A2654600257A3CFB00BFCC22",
+        "A202A64820E10F9B0058CDB9",
+        "A202A64920E10F9B0058CDB9",
+        "A27CEABA273A9AAF00A95FA0",
+        "A202A64A20E10F9B0058CDB9",
+        "A202A64B20E10F9B0058CDB9",
+        "A2A25AEC229E966A00DC5294",
+        "A202A64D20E10F9B0058CDB9",
+        "A202A64E20E10F9B0058CDB9",
+        "A29B9B2E2396830300AC4C3C",
+        "A202A64F20E10F9B0058CDB9",
+        "A226AC6922A930E900199D2A",
+        "A202A65020E10F9B0058CDB9",
+        "A202A65120E10F9B0058CDB9",
+        "A202A65220E10F9B0058CDB9"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A247B3401FE0028E008440F1": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33F1FE0028E008440F1"
+    },
+    "A247B33F1FE0028E008440F1": {
+      "path": "Assets.xcassets",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "folder.assetcatalog",
+      "sourceTree": "<group>"
+    },
+    "A25BC56A25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29F120E3C93300C3EB96"
+    },
+    "A25BC57625AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6CA20DBBAF200FFF66A"
+    },
+    "A2F4B6C520DBBA0A00FFF66A": {
+      "path": "about.htm",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.html",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A202A61B20E10E2D0058CDB9": {
+      "path": "CRToastConfig.h",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.h",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A2F4B6CF20DCF9FE00FFF66A": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6CE20DCF9FE00FFF66A"
+    },
+    "A2A25AEC229E966A00DC5294": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AEE229E966A00DC5294"
+    },
+    "A25BC56725AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29E620E39CE500C3EB96"
+    },
+    "A2AFB32325A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2EAB9D71FFE931100CD42CC"
+    },
+    "A270CC9825B2081A0090B58C": {
+      "path": "OmnisAppInterface.framework",
+      "isa": "PBXFileReference",
+      "explicitFileType": "wrapper.framework",
+      "sourceTree": "BUILT_PRODUCTS_DIR"
+    },
+    "A2AFB31425A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6CE20DCF9FE00FFF66A"
+    },
+    "A2DE29E020E3949D00C3EB96": {
+      "path": "OmnisJSWrapper_PushNotifications.entitlements",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.plist.entitlements",
+      "sourceTree": "<group>"
+    },
+    "A202A65020E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC71A207B868000E7CF70"
+    },
+    "A25BC55C25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6CE20DCF9FE00FFF66A"
+    },
+    "A202A64120E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6CE20DCF9FE00FFF66A"
+    },
+    "A25BC54D25AB976500F4293B": {
+      "isa": "PBXSourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A22858F02641847900502D54",
+        "A25BC54E25AB976500F4293B",
+        "A25BC54F25AB976500F4293B",
+        "A25BC55025AB976500F4293B",
+        "A25BC55125AB976500F4293B",
+        "A25BC55225AB976500F4293B",
+        "A25BC55325AB976500F4293B",
+        "A25BC55425AB976500F4293B",
+        "A25BC55525AB976500F4293B",
+        "A25BC55625AB976500F4293B",
+        "A25BC55725AB976500F4293B",
+        "A25BC55825AB976500F4293B",
+        "A25BC55925AB976500F4293B",
+        "A25BC55A25AB976500F4293B",
+        "A25BC55B25AB976500F4293B",
+        "A25BC55C25AB976500F4293B",
+        "A25BC55D25AB976500F4293B",
+        "A25BC55E25AB976500F4293B"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A202A64F20E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A26F8A8E20766CD500C53337"
+    },
+    "A2254764223FDA8800A45F3D": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29F220E3C93300C3EB96"
+    },
+    "A25884BB229558E20061DA53": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A25884B9229558E20061DA53"
+    },
+    "A21AC71D207B868100E7CF70": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC71B207B868100E7CF70"
+    },
+    "A25BC58025AB976500F4293B": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "DEBUG PUSH_NOTIFICATIONS",
+        "HEADER_SEARCH_PATHS": "Firebase",
+        "MARKETING_VERSION": "3.2.4",
+        "CODE_SIGN_ENTITLEMENTS": "OmnisJSWrapper_PushNotifications.entitlements",
+        "FRAMEWORK_SEARCH_PATHS": [
+          "$(inherited)",
+          "$(PROJECT_DIR)/Firebase/Analytics",
+          "$(PROJECT_DIR)/Firebase/Messaging"
+        ],
+        "LD_RUNPATH_SEARCH_PATHS": [
+          "$(inherited)",
+          "@executable_path/Frameworks"
+        ],
+        "PRODUCT_BUNDLE_IDENTIFIER": "net.omnis.Omnis-Wrapper-Push",
+        "OTHER_LDFLAGS": "-ObjC",
+        "PRODUCT_NAME": "$(TARGET_NAME)",
+        "GCC_PREPROCESSOR_DEFINITIONS": [
+          "PUSH_NOTIFICATIONS",
+          "$(inherited)"
+        ]
+      },
+      "name": "Debug"
+    },
+    "A247B33A1FE0028E008440F1": {
+      "path": "MainViewController.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "A25BC57125AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A20DFFE3206D2BCF002CEFEE"
+    },
+    "A2AFB32825A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC71B207B868100E7CF70"
+    },
+    "A2F4B6CB20DBBAF200FFF66A": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6CA20DBBAF200FFF66A"
+    },
+    "A247B3371FE0028E008440F1": {
+      "path": "Omnis Wrapper",
+      "isa": "PBXGroup",
+      "children": [
+        "A202A62820E10E3A0058CDB9",
+        "A202A61620E10E2D0058CDB9",
+        "A21AC718207B7CB500E7CF70",
+        "A2F4B6CE20DCF9FE00FFF66A",
+        "A21AC717207B7CB500E7CF70",
+        "A25884B9229558E20061DA53",
+        "A2F4B6D220DD044200FFF66A",
+        "A247B3381FE0028E008440F1",
+        "A20DFFE4206D2BFC002CEFEE",
+        "A2A25AFE229E9ED700DC5294",
+        "A247B33C1FE0028E008440F1",
+        "A29B9B2C2396830300AC4C3C",
+        "A247B33F1FE0028E008440F1",
+        "A247B3441FE0028E008440F1",
+        "A21AC713207B7C9A00E7CF70",
+        "A2A25AEE229E966A00DC5294",
+        "A2A25AF7229E9BA500DC5294",
+        "A22858E2264098E600502D54"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A2DE29EF20E3C93200C3EB96": {
+      "path": "Firebase/Analytics/FirebaseNanoPB.framework",
+      "isa": "PBXFileReference",
+      "name": "FirebaseNanoPB.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A225476C223FDA8800A45F3D": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2254769223FDA8800A45F3D"
+    },
+    "A2AFB31D25A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A29B9B2C2396830300AC4C3C"
+    },
+    "A25BC54B25AB963C00F4293B": {
+      "buildActionMask": "2147483647",
+      "dstSubfolderSpec": "10",
+      "isa": "PBXCopyFilesBuildPhase",
+      "runOnlyForDeploymentPostprocessing": "0",
+      "dstPath": "",
+      "files": [
+        "A25BC54A25AB963C00F4293B"
+      ],
+      "name": "Embed Frameworks"
+    },
+    "A29B9B2E2396830300AC4C3C": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A29B9B2C2396830300AC4C3C"
+    },
+    "A2DE29FB20E3C98300C3EB96": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29FA20E3C98300C3EB96"
+    },
+    "A2AFB30E25A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AFE229E9ED700DC5294"
+    },
+    "A2254769223FDA8800A45F3D": {
+      "path": "Firebase/Analytics/GoogleUtilities.framework",
+      "isa": "PBXFileReference",
+      "name": "GoogleUtilities.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A27CEAB7273A9AAD00A95FA0": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A27CEAB6273A9A9500A95FA0"
+    },
+    "A25BC55425AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A202A62120E10E2D0058CDB9"
+    },
+    "A202A64A20E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33C1FE0028E008440F1"
+    },
+    "A2DE29F020E3C93300C3EB96": {
+      "path": "Firebase/Analytics/GoogleToolboxForMac.framework",
+      "isa": "PBXFileReference",
+      "name": "GoogleToolboxForMac.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A202A64720E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33F1FE0028E008440F1"
+    },
+    "A2DE29F820E3C94500C3EB96": {
+      "path": "Firebase/Messaging/Protobuf.framework",
+      "isa": "PBXFileReference",
+      "name": "Protobuf.framework",
+      "lastKnownFileType": "wrapper.framework",
+      "sourceTree": "<group>"
+    },
+    "A202A61820E10E2D0058CDB9": {
+      "path": "CRToastManager.m",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.objc",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A202A63820E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A202A62120E10E2D0058CDB9"
+    },
+    "A247B3321FE0028E008440F1": {
+      "isa": "PBXFrameworksBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A25BC53F25AB959300F4293B"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A20DFFE4206D2BFC002CEFEE": {
+      "path": "SettingsHelper.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "A2F4B6D120DD043800FFF66A": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6D020DD043800FFF66A"
+    },
+    "A25BC56B25AB976500F4293B": {
+      "isa": "PBXResourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A25BC56C25AB976500F4293B",
+        "A25BC56D25AB976500F4293B",
+        "A25BC56E25AB976500F4293B",
+        "A25BC56F25AB976500F4293B",
+        "A25BC57025AB976500F4293B",
+        "A25BC57125AB976500F4293B",
+        "A27CEAB9273A9AAE00A95FA0",
+        "A25BC57225AB976500F4293B",
+        "A25BC57325AB976500F4293B",
+        "A25BC57425AB976500F4293B",
+        "A25BC57525AB976500F4293B",
+        "A25BC57625AB976500F4293B",
+        "A25BC57725AB976500F4293B",
+        "A25BC57825AB976500F4293B",
+        "A25BC57925AB976500F4293B",
+        "A25BC57A25AB976500F4293B",
+        "A25BC57B25AB976500F4293B",
+        "A25BC57C25AB976500F4293B"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A2A25AF4229E9BA500DC5294": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AF7229E9BA500DC5294"
+    },
+    "A2F4B6C620DBBA0A00FFF66A": {
+      "path": "omnislogo.png",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "image.png",
+      "sourceTree": "<group>"
+    },
+    "A21AC718207B7CB500E7CF70": {
+      "path": "PullToRefreshView.h",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.h",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A22858E2264098E600502D54": {
+      "path": "WKWebView+KeyboardWNoInteraction.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "A25BC56825AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29F220E3C93300C3EB96"
+    },
+    "A25BC55925AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6D020DD043800FFF66A"
+    },
+    "A270CC9925B2081A0090B58C": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A270CC9825B2081A0090B58C"
+    },
+    "A2AFB31525A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C020DBA2E200FFF66A"
+    },
+    "A26545FF257A3CFB00BFCC22": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A26545FE257A3CFB00BFCC22"
+    },
+    "A247B3461FE0028E008440F1": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "CURRENT_PROJECT_VERSION": "1",
+        "CLANG_WARN_RANGE_LOOP_ANALYSIS": "YES",
+        "FRAMEWORK_SEARCH_PATHS": "$(PROJECT_DIR)/Frameworks",
+        "CODE_SIGN_IDENTITY": "iPhone Distribution",
+        "SWIFT_OPTIMIZATION_LEVEL": "-O",
+        "CLANG_WARN_INFINITE_RECURSION": "YES",
+        "SWIFT_COMPILATION_MODE": "wholemodule",
+        "GCC_WARN_UNUSED_VARIABLE": "YES",
+        "CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING": "YES",
+        "INFOPLIST_FILE": "Omnis Wrapper/Info.plist",
+        "CLANG_WARN_UNGUARDED_AVAILABILITY": "YES_AGGRESSIVE",
+        "COPY_PHASE_STRIP": "NO",
+        "CLANG_WARN_BOOL_CONVERSION": "YES",
+        "CLANG_WARN_ENUM_CONVERSION": "YES",
+        "CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS": "YES",
+        "CLANG_WARN_COMMA": "YES",
+        "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "${EXTRA_BEHAVIOR_FLAGS}",
+        "CLANG_WARN_INT_CONVERSION": "YES",
+        "SWIFT_VERSION": "4.0",
+        "ENABLE_STRICT_OBJC_MSGSEND": "YES",
+        "TARGETED_DEVICE_FAMILY": "1,2",
+        "CLANG_WARN_SUSPICIOUS_MOVE": "YES",
+        "CLANG_WARN_EMPTY_BODY": "YES",
+        "SDKROOT": "iphoneos",
+        "CLANG_WARN_DOCUMENTATION_COMMENTS": "YES",
+        "CODE_SIGN_STYLE": "Manual",
+        "MTL_ENABLE_DEBUG_INFO": "NO",
+        "IPHONEOS_DEPLOYMENT_TARGET": "11.2",
+        "LD_RUNPATH_SEARCH_PATHS": "@executable_path/Frameworks",
+        "CLANG_CXX_LIBRARY": "libc++",
+        "CLANG_ENABLE_OBJC_ARC": "YES",
+        "GCC_WARN_UNINITIALIZED_AUTOS": "YES_AGGRESSIVE",
+        "GCC_C_LANGUAGE_STANDARD": "gnu11",
+        "VALIDATE_PRODUCT": "YES",
+        "CLANG_ENABLE_MODULES": "YES",
+        "ALWAYS_SEARCH_USER_PATHS": "NO",
+        "MARKETING_VERSION": "3.2.3",
+        "CLANG_WARN_DIRECT_OBJC_ISA_USAGE": "YES_ERROR",
+        "CLANG_WARN_CONSTANT_CONVERSION": "YES",
+        "GCC_NO_COMMON_BLOCKS": "YES",
+        "CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF": "YES",
+        "CLANG_WARN_OBJC_ROOT_CLASS": "YES_ERROR",
+        "PRODUCT_NAME": "$(TARGET_NAME)",
+        "GCC_WARN_64_TO_32_BIT_CONVERSION": "YES",
+        "CLANG_CXX_LANGUAGE_STANDARD": "gnu++14",
+        "CLANG_WARN__DUPLICATE_METHOD_MATCH": "YES",
+        "DEBUG_INFORMATION_FORMAT": "dwarf-with-dsym",
+        "SWIFT_OBJC_BRIDGING_HEADER": "Omnis Wrapper/Omnis Wrapper-Bridging-Header.h",
+        "GCC_WARN_UNDECLARED_SELECTOR": "YES",
+        "CLANG_ANALYZER_NONNULL": "YES",
+        "CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION": "YES_AGGRESSIVE",
+        "CLANG_WARN_STRICT_PROTOTYPES": "YES",
+        "GCC_WARN_ABOUT_RETURN_TYPE": "YES_ERROR",
+        "GCC_WARN_UNUSED_FUNCTION": "YES",
+        "CLANG_WARN_UNREACHABLE_CODE": "YES",
+        "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
+        "ENABLE_NS_ASSERTIONS": "NO",
+        "EXTRA_BEHAVIOR_FLAGS": "",
+        "CLANG_WARN_NON_LITERAL_NULL_CONVERSION": "YES",
+        "CLANG_WARN_OBJC_LITERAL_CONVERSION": "YES"
+      },
+      "name": "Release"
+    },
+    "A2F4B6D220DD044200FFF66A": {
+      "path": "ViewControllers",
+      "isa": "PBXGroup",
+      "children": [
+        "A2F4B6D020DD043800FFF66A",
+        "A247B33A1FE0028E008440F1",
+        "A2F4B6C020DBA2E200FFF66A",
+        "A2F4B6BC20DAA90700FFF66A",
+        "A2F4B6BE20DAB2DC00FFF66A"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A202A62220E10E2D0058CDB9": {
+      "path": "CRToastViewController.h",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.h",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A25BC54E25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC717207B7CB500E7CF70"
+    },
+    "A202A64220E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C020DBA2E200FFF66A"
+    },
+    "A2EAB9D51FFE92EC00CD42CC": {
+      "path": "Resources",
+      "isa": "PBXGroup",
+      "children": [
+        "A2F4B6C920DBBAE700FFF66A",
+        "A2F4B6C420DBB9FA00FFF66A",
+        "A20DFFE3206D2BCF002CEFEE",
+        "A2A8317520177527005A3D73",
+        "A27CEAB6273A9A9500A95FA0",
+        "A26545FE257A3CFB00BFCC22",
+        "A226AC6722A930E900199D2A",
+        "A21AC71A207B868000E7CF70",
+        "A21AC71B207B868100E7CF70",
+        "A2EAB9D61FFE92FE00CD42CC"
+      ],
+      "sourceTree": "<group>"
+    },
+    "A25BC57F25AB976500F4293B": {
+      "isa": "XCConfigurationList",
+      "defaultConfigurationIsVisible": "0",
+      "defaultConfigurationName": "Release",
+      "buildConfigurations": [
+        "A25BC58025AB976500F4293B",
+        "A25BC58125AB976500F4293B"
+      ]
+    },
+    "A202A63320E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC717207B7CB500E7CF70"
+    },
+    "A247B33B1FE0028E008440F1": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33A1FE0028E008440F1"
+    },
+    "A25BC57225AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B33C1FE0028E008440F1"
+    },
+    "A2AFB32925A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C620DBBA0A00FFF66A"
+    },
+    "A247B32C1FE0028E008440F1": {
+      "isa": "PBXGroup",
+      "sourceTree": "<group>",
+      "children": [
+        "A2DE29E020E3949D00C3EB96",
+        "A2F8BCB720E627B100F52174",
+        "A26F8A8E20766CD500C53337",
+        "A2EAB9D51FFE92EC00CD42CC",
+        "A247B3371FE0028E008440F1",
+        "A247B3361FE0028E008440F1",
+        "A247B37A1FE0081F008440F1"
+      ]
+    },
+    "A25BC56325AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2254768223FDA8800A45F3D"
+    },
+    "A25BC58725AB979200F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A25BC58525AB979200F4293B",
+      "settings": {
+        "ATTRIBUTES": [
+          "CodeSignOnCopy",
+          "RemoveHeadersOnCopy"
+        ]
+      }
+    },
+    "A2AFB31025A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B3381FE0028E008440F1"
+    },
+    "A22858F12641847A00502D54": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A22858E2264098E600502D54"
+    },
+    "A2F8BCB820E627B200F52174": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F8BCB720E627B100F52174"
+    },
+    "A2EAB9D81FFE931100CD42CC": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2EAB9D71FFE931100CD42CC"
+    },
+    "A202A65620E10F9B0058CDB9": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "DEBUG PUSH_NOTIFICATIONS",
+        "HEADER_SEARCH_PATHS": "Firebase",
+        "MARKETING_VERSION": "3.2.4",
+        "CODE_SIGN_ENTITLEMENTS": "OmnisJSWrapper_PushNotifications.entitlements",
+        "FRAMEWORK_SEARCH_PATHS": [
+          "$(inherited)",
+          "$(PROJECT_DIR)/Firebase/Analytics",
+          "$(PROJECT_DIR)/Firebase/Messaging"
+        ],
+        "LD_RUNPATH_SEARCH_PATHS": [
+          "$(inherited)",
+          "@executable_path/Frameworks"
+        ],
+        "PRODUCT_BUNDLE_IDENTIFIER": "net.omnis.Omnis-Wrapper-Push",
+        "OTHER_LDFLAGS": "-ObjC",
+        "GCC_PREPROCESSOR_DEFINITIONS": [
+          "PUSH_NOTIFICATIONS",
+          "$(inherited)"
+        ]
+      },
+      "name": "Debug"
+    },
+    "A2AFB30F25A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6BE20DAB2DC00FFF66A"
+    },
+    "A25BC57A25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC71A207B868000E7CF70"
+    },
+    "A2A25AFE229E9ED700DC5294": {
+      "path": "UILocalization.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "A25BC57725AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A29B9B2C2396830300AC4C3C"
+    },
+    "A202A61C20E10E2D0058CDB9": {
+      "path": "CRToast.h",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.h",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A202A63C20E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A247B3381FE0028E008440F1"
+    },
+    "A2A25AED229E966A00DC5294": {
+      "path": "en.lproj/Localizable.strings",
+      "isa": "PBXFileReference",
+      "name": "en",
+      "lastKnownFileType": "text.plist.strings",
+      "sourceTree": "<group>"
+    },
+    "A2AFB32425A5CF46006D9214": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6CA20DBBAF200FFF66A"
+    },
+    "A202A63920E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A20DFFE4206D2BFC002CEFEE"
+    },
+    "A202A61920E10E2D0058CDB9": {
+      "path": "CRToastView.h",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.h",
+      "sourceTree": "<group>",
+      "fileEncoding": "4"
+    },
+    "A22858E4264099FB00502D54": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A22858E2264098E600502D54"
+    },
+    "A247B3331FE0028E008440F1": {
+      "isa": "PBXResourcesBuildPhase",
+      "buildActionMask": "2147483647",
+      "files": [
+        "A247B3401FE0028E008440F1",
+        "A2A8317620177527005A3D73",
+        "A20DFFE6206D329F002CEFEE",
+        "A29B9B2D2396830300AC4C3C",
+        "A26545FF257A3CFB00BFCC22",
+        "A2A25AF4229E9BA500DC5294",
+        "A247B33E1FE0028E008440F1",
+        "A2F4B6C720DBBA0B00FFF66A",
+        "A2A25AEB229E966A00DC5294",
+        "A27CEAB7273A9AAD00A95FA0",
+        "A2EAB9D81FFE931100CD42CC",
+        "A2F4B6CB20DBBAF200FFF66A",
+        "A226AC6822A930E900199D2A",
+        "A26F8A8F20766CD500C53337",
+        "A21AC71C207B868100E7CF70",
+        "A21AC71D207B868100E7CF70",
+        "A2F4B6C820DBBA0B00FFF66A"
+      ],
+      "runOnlyForDeploymentPostprocessing": "0"
+    },
+    "A25BC56C25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F8BCB720E627B100F52174"
+    },
+    "A27CEABA273A9AAF00A95FA0": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A27CEAB6273A9A9500A95FA0"
+    },
+    "A2A25AF5229E9BA500DC5294": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2A25AF7229E9BA500DC5294"
+    },
+    "A20DFFE3206D2BCF002CEFEE": {
+      "path": "config.xml",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "text.xml",
+      "sourceTree": "<group>"
+    },
+    "A21AC719207B7CB500E7CF70": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC717207B7CB500E7CF70"
+    },
+    "A202A65120E10F9B0058CDB9": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A21AC71B207B868100E7CF70"
+    },
+    "A25BC55D25AB976500F4293B": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2F4B6C020DBA2E200FFF66A"
+    },
+    "A2254765223FDA8800A45F3D": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A2DE29E420E39CE500C3EB96"
+    },
+    "A21AC713207B7C9A00E7CF70": {
+      "path": "Omnis Wrapper-Bridging-Header.h",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.c.h",
+      "sourceTree": "<group>"
+    },
+    "A25BC58125AB976500F4293B": {
+      "isa": "XCBuildConfiguration",
+      "buildSettings": {
+        "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "PUSH_NOTIFICATIONS",
+        "HEADER_SEARCH_PATHS": "Firebase",
+        "MARKETING_VERSION": "3.2.4",
+        "CODE_SIGN_ENTITLEMENTS": "OmnisJSWrapper_PushNotifications.entitlements",
+        "FRAMEWORK_SEARCH_PATHS": [
+          "$(inherited)",
+          "$(PROJECT_DIR)/Firebase/Analytics",
+          "$(PROJECT_DIR)/Firebase/Messaging"
+        ],
+        "LD_RUNPATH_SEARCH_PATHS": [
+          "$(inherited)",
+          "@executable_path/Frameworks"
+        ],
+        "PRODUCT_BUNDLE_IDENTIFIER": "net.omnis.Omnis-Wrapper-Push",
+        "OTHER_LDFLAGS": "-ObjC",
+        "PRODUCT_NAME": "$(TARGET_NAME)",
+        "GCC_PREPROCESSOR_DEFINITIONS": "PUSH_NOTIFICATIONS"
+      },
+      "name": "Release"
+    },
+    "A2654600257A3CFB00BFCC22": {
+      "isa": "PBXBuildFile",
+      "fileRef": "A26545FE257A3CFB00BFCC22"
+    },
+    "A25884B9229558E20061DA53": {
+      "path": "OmnisCommsDelegate.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    },
+    "A247B3471FE0028E008440F1": {
+      "isa": "XCConfigurationList",
+      "defaultConfigurationIsVisible": "0",
+      "defaultConfigurationName": "Release",
+      "buildConfigurations": [
+        "A247B3481FE0028E008440F1",
+        "A247B3491FE0028E008440F1"
+      ]
+    },
+    "A247B3381FE0028E008440F1": {
+      "path": "AppDelegate.swift",
+      "isa": "PBXFileReference",
+      "lastKnownFileType": "sourcecode.swift",
+      "sourceTree": "<group>"
+    }
+  },
+  "rootObject": "A247B32D1FE0028E008440F1"
+}

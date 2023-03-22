@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmnisiOSConfig>
+	
+	<!-- URL to the Omnis or Web Server.
+	 If using the Omnis Server it should be http://<ipaddress>:<omnis port>.
+	 If using a web server it should be a URL to the root of your Web server E.g. http://myserver.com -->
+	<WebServerURL type="string" exposed="1">http://127.0.0.1:9102</WebServerURL>
+	
+	<!--  Route to the form’s .htm file from WebServerURL.
+	 So if you’re using the built in Omnis server, it will be of the form /jschtml/myform.htm.
+	 If you are using a web server, it will be the remainder of the URL to get to the form
+	 e.g. /omnisapps/myform.htm -->
+	<OnlineForm type="string" exposed="1">/jschtml/js1.htm</OnlineForm>
+	
+	<!-- The name (including .db extension) of the local sqlite database to use.
+	 If you are bundling a prepopulated database with your app, its name should match what you set
+	 here. -->
+	<LocalDBName exposed="1">local.db</LocalDBName>
+	
+	
+	<!-- Whether the app should initially start in offline mode (1), or online mode (0) -->
+	<StartInOfflineMode type="bool" exposed="1">0</StartInOfflineMode>
+	
+	
+	<!-- Name of the offline form. (DO NOT ADD .HTM EXTENSION!)
+	 OFFLINE ONLY -->
+	<OfflineFormName exposed="1">jsSample</OfflineFormName>
+	
+	<!-- Name of the App SCAF. This will be the same as your library name.
+	 This is case-sensitive and must match the App Scaf (by default this is generally all lower-case)
+	  OFFLINE ONLY -->
+	<AppSCAFName exposed="1">themes</AppSCAFName>
+	
+	<!-- The Omnis Server <IP Address>:<Port>.
+	 Only necessary if you are using a web server with the Omnis Web Server Plugin.
+	 If the Omnis App Server is running on the same machine as the web server, you can just supply
+	 a port here. E.g. 194.168.1.49:5912
+	 OFFLINE ONLY -->
+	<OmnisServer exposed="1"></OmnisServer>
+	
+	<!--  If you are using a web server plug-in to talk to Omnis, the route to this from
+	 WebServerURL. E.g. /cgi-bin/omnisapi.dll
+	 OFFLINE ONLY -->
+	<OmnisPlugin exposed="1"></OmnisPlugin>
+	
+	<!-- URL to the RESTful interface to your Omnis server used for handling push notifications.
+	 For direct to Omnis connections, this will be of the form: http://<ip address>:<$serverport>
+	 When using a Web Server, this will be a URL to your RESTful web server plugin, suffixed with "/ws/xxx"
+	 Where xxx is either:
+	 1) nnnn (a port number)
+	 2) ipaddress_nnnn (IP address and port number)
+	 3) serverpool_ipaddress_nnnn
+	 E.g: http://myserver.com/cgi-bin/nph-omnisrestcgi/ws/5912
+	 -->
+	<PushNotificationServer exposed="1">http://192.168.100.5:9101</PushNotificationServer>
+	
+	
+	<PushNotificationGroupMask type="long">0</PushNotificationGroupMask>
+
+	
+	<!-- Whether the option to switch between online & offline modes is
+	 shown in the pull-down menu -->
+	<MenuIncludeOffline type="bool">1</MenuIncludeOffline>
+	
+	<!-- Whether to show the option to update (while in offline mode) in the pull-down menu -->
+	<MenuIncludeUpdate type="bool">1</MenuIncludeUpdate>
+	
+	<!-- Whether the About option is shown in the pull-down menu -->
+	<MenuIncludeAbout type="bool">1</MenuIncludeAbout>
+	
+	<!--Whether the Credits option is shown in the pull-down menu.
+	 If the About option is enabled, this should probably be disabled, as the About screen includes a Credits link -->
+	<MenuIncludeCredits type="bool">0</MenuIncludeCredits>
+	
+	<!-- Whether the Settings option is shown in the pull-down menu -->
+	<MenuIncludeSettings type="bool">1</MenuIncludeSettings>
+	
+	
+	<!--  If 0, dates & times are converted to/from UTC, as default. Setting this to 1 will disable this conversion.
+	 (OFFLINE ONLYs - online mode reads from remote task's $localtime property) -->
+	<UseLocalTime type="bool">0</UseLocalTime>
+	
+	<!--	The (hex color string) background color for the App - this will affect the status bar, and 'Safe Areas' on iPhone X	-->
+	<BackgroundColor type="string">#FFFFFF</BackgroundColor>
+	
+	<!-- Whether the app should show the status bar at the top -->
+	<AppTitle type="bool">1</AppTitle>
+	
+	<!-- Whether to use white (1) or black (0) text on the status bar -->
+	<LightStatusBar type="bool">0</LightStatusBar>
+	
+	<!-- If true, the software keyboard will be shown when programatically focusing on an entry field - even if not initiated by a user click
+		NOTE: Requires EXTRA_BEHAVIOR_FLAGS project build setting to include 'KEYBOARD_WITHOUT_USER_INTERACTION'.
+		WARNING: This uses private method swizzling, and so could potentially cause your app to be rejected from the App Store. Do not set KEYBOARD_WITHOUT_USER_INTERACTION if this is a concern. -->
+	<KeyboardWithoutUserInteraction type="bool">0</KeyboardWithoutUserInteraction>
+	</OmnisiOSConfig>

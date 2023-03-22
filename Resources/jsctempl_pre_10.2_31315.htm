@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%; height: 100%;">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- This makes mobile device support work -->
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=0">
+
+		
+				<link href="css/all_comps_core.css" rel="stylesheet">
+		
+				<link href="css/core.css" rel="stylesheet">
+		
+				<link href="css/all_comps.css" rel="stylesheet">
+		
+
+		<!-- Edit user.css to specify any CSS classes assigned using the $cssclassname property -->
+		<link type="text/css" href="css/user.css" rel="stylesheet" media="print, screen" />
+
+		
+				<script src="scripts/runtime.bundle.js"></script>
+		
+				<script src="scripts/vendors_all_comps_core.bundle.js"></script>
+		
+				<script src="scripts/all_comps_core.bundle.js"></script>
+		
+				<script src="scripts/core.bundle.js"></script>
+		
+				<script src="scripts/all_comps.bundle.js"></script>
+
+		<!-- Edit the array below to add further client localization. The relevant language file should be in /scripts/locale/ -->
+		<script>var supportedLanguages = ["de", "es", "fr", "it"];</script>
+
+		<title></title>
+    </head>
+    <body style="margin:0;overflow:auto;width:100%;height:100%;">
+        <!--
+         
+         The omnisform object is where the Omnis JavaScript client remote form will be embedded in the browser.
+         The property data-webserverurl identifies the HTTP URL of either the Omnis development environment/runtime or the
+         Web Server (the latter case applies when using the Omnis web server plugin to run the Omnis application server along-side
+         a Web Server).
+         For example:
+         When testing with the development environment, the data-webserverurl might be http://127.0.0.1:5000.  In this case,
+         data-omnisserverandport is empty.
+         
+         When using a Web Server, the data-webserverurl might be http://www.myhost.com/scripts/omnisapi.dll.  In this case, data-omnisserverandport
+         tells the Omnis web server plugin how to connect to the Omnis application server, so for example it might be "5000" if the Omnis
+         Application server is at port 5000 on the same machine as the web server, or "111.222.000.111:5000" if the Omnis application server
+         is at port 5000 on the machine with IP address 111.222.000.111.
+         
+         data-omnislibrary and data-omnisclass identify the remote form to be used as the initial form hosted by the omnisform object.
+         
+         The remaining parameters are parameters passed in the row variable parameter to $construct of the remote task and form.
+         If you add another Omnis object to the form, set its id to omnisobject2 and so on...
+         
+         Special Parameters:
+         _PS_ in the data-webserverurl is replaced with the address of the server from which this HTML page is being served e.g.
+         If the page is at http://127.0.0.1:5000/jschtml/test.htm, then _PS_ will be replaced with http://127.0.0.1:5000
+         
+         data-commstimeout is a timeout in seconds - when the client sends a message to the server it must respond within this timeout.
+         When the timeout occurs, the client asks the user if they want to continue waiting for the response, and they have the option to
+         abort the request.
+         A value of zero means no timeout is applied.
+         -->
+        <div id="omnisobject1" style="position:absolute;top:0px;left:0px;width:100%;height:100%;" data-webserverurl="" data-omnisserverandport="" data-omnislibrary="" data-omnisclass="" data-dss="" data-param1="" data-param2="" data-commstimeout="0" data-themename="default" data-offlinemode="1">
+        </div>
+        
+        
+    </body>
+</html>

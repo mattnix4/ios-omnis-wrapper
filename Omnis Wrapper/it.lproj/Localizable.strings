@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  Omnis Wrapper
+
+  Created by Jason Gissing on 18/06/2018.
+  Copyright © 2018 Omnis Software. All rights reserved.
+*/
+
+// MARK: General
+"Error" = "Errore";
+"OK" = "OK";
+"Cancel" = "Cancella";
+"no" = "No";
+
+// MARK: Pull-down menu
+"Pull Down For Menu" = "Tirare in basso per il Menu...";
+"Release For Menu" = "Rilasciare per il Menu...";
+
+// MARK: Action menu items
+"Actions" = "Azioni"; // The title of the 'Actions' menu button
+"Reload" = "Aggiorna";
+"Update SCAFs" = "Agiorna SCAFs";
+"Go Offline" = "Modalità Offline";
+"Go Online" = "Modalità Online";
+"Settings" = "Impostazioni";
+
+// MARK: Loading Overlay
+"cancel_overlay" = "Cancella...";
+
+// MARK: SCAF handling
+"SCAF Error" = "Errore SCAF"; // Title used for default dialog when a SCAF error occurs.
+"SCAF Update" = "Aggiornamento SCAF"; // Title used for default dialog when a SCAF update result is shown.
+"SCAF Update Error" = "Errore aggiornamento SCAF"; // Title used for default dialog when a SCAF update error occurs.
+"SCAF Handler not initialized" = "Gestore SCAF non inizializzato"; // SCAF Error
+"Scaf Missing Form" = "Form '%@' non presente nel SCAF"; // May include a single %@ placeholder, which will be replaced with the offline form name.
+"Offline form not ready" = "Form offline non è pronto";
+"No offline form name set"= "Nome per form offline non è stato assegnato";
+"No updates available" = "Ultima version in uso. Nessun nuovo aggiornamento disponibile.";
+"Update successful" = "Aggiornamento avvenuto con successo.";
+"Updating SCAFs..." = "Aggiornando SCAFs..."; // Text shown on overlay while updating SCAFs.
+
+// MARK: Navigation titles for About/Credits screens (also used for pull-down menu items)
+"nav_title_about" = "Informazioni";
+"nav_title_credits" = "Credits";
